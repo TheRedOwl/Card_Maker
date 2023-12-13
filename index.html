@@ -1,11 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="input.js"></script>
     <title>Document</title>
 </head>
+
 <body>
+    <div class="container">
+        <div class="editPage">
+            <div class="input-group mb-3">
+                <input id="Name" type="text" class="form-control" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2" onkeyup="getName()">
+                <span class="input-group-text" id="basic-addon2">Your name</span>
+            </div>
+            <div class="textAligner">
+                <div>
+                    <div class="labels">
+                        <span>Left</span>
+                        <span>Right</span>
+                    </div>
+                    <input type="range" onchange="nameJustify()" class="form-range" min="0" max="100" id="nameLeftRight">
+                </div>
+                <div>
+                    <div class="labels">
+                        <span>Up</span>
+                        <span>Down</span>
+                    </div>
+                    <input type="range" onchange="nameAlign()" class="form-range" min="0" max="100" id="nameUpDown">
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input id="LowerText" type="text" class="form-control" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2" onkeyup="getLowerText()">
+                <span class="input-group-text" id="basic-addon2">Lower text</span>
+            </div>
+            <div class="textAligner">
+                <div>
+                    <div class="labels">
+                        <span>Left</span>
+                        <span>Right</span>
+                    </div>
+                    <input type="range" onchange="lowerTextJustify()" class="form-range" min="0" max="100" id="nameLeftRight">
+                </div>
+                <div>
+                    <div class="labels">
+                        <span>Up</span>
+                        <span>Down</span>
+                    </div>
+                    <input type="range" onchange="lowerTextAlign()" class="form-range" min="0" max="100" id="nameUpDown">
+                </div>
+            </div>
+            <div class="input-group mb-3">
+                <input id="Image" type="text" class="form-control" aria-label="Recipient's username"
+                    aria-describedby="basic-addon2" onkeyup="getImage()">
+                <span class="input-group-text" id="basic-addon2">Image (Link or file name)</span>
+            </div>
+            <div class="textAligner">
+                <div>
+                    <div class="labels">
+                        <span>Left</span>
+                        <span>Right</span>
+                    </div>
+                    <input type="range" onchange="imageJustify()" class="form-range" min="0" max="100" id="nameLeftRight">
+                </div>
+                <div>
+                    <div class="labels">
+                        <span>Up</span>
+                        <span>Down</span>
+                    </div>
+                    <input type="range" onchange="ImageAlign()" class="form-range" min="0" max="100" id="nameUpDown">
+                </div>
+            </div>
+        </div>
+        <div class="workPage">
+            <div class="workName">
+                <h1></h1>
+            </div>
+            <div class="workLowerText">
+                <h5></h5>
+            </div>
+            <div class="workImage">
+                <img class="img-fluid" src="" alt="Your image">
+            </div>
+        </div>
+    </div>
     
 </body>
+
 </html>

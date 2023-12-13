@@ -1,0 +1,36 @@
+.container{
+    width: 1200px;
+    height: 600px;
+    border: 1px black solid;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.editPage{
+    width: 600px;
+    border: 1px black solid;
+    height: 550px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.workPage{
+    width: 600px;
+    border: 1px black solid;
+    height: 550px;
+    border-radius: 15px;
+    display: flex;
+}
+.textAligner{
+    display: flex;
+    justify-content: space-around;
+}
+
+.textAligner>div{
+    margin: 5px;
+    width: 250px;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
